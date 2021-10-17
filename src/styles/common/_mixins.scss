@@ -1,0 +1,27 @@
+@mixin container {
+  max-width: 1276px;
+  margin: 0 auto;
+}
+
+@mixin logo {
+  color: inherit;
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@mixin btn {
+  display: inline-block;
+  padding: 23px 68px 24px 69px;
+  font-family: $font;
+  color: inherit;
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  background-color: $color-accent;
+}

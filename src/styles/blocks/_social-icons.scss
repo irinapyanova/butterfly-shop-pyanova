@@ -1,0 +1,23 @@
+.social-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-item {
+  margin-right: 15px;
+}
+
+.social-link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-text {
+  font-size: 1px;
+  opacity: 0;
+}

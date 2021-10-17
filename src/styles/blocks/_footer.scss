@@ -1,0 +1,24 @@
+.footer {
+  padding: 31px 0;
+  background-color: $color-dark;
+}
+
+.footer-inner {
+  @include container;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  margin-right: auto;
+}
+
+.footer-phone {
+  margin-right: 60px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 400;
+}

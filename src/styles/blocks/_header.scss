@@ -1,0 +1,18 @@
+.header {
+  padding: 17px 0;
+  background-color: $color-dark;
+}
+
+.header-inner {
+  @include container;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  @include logo;
+}
