@@ -14,3 +14,8 @@ a {
 .btn {
   @include btn;
 }
+
+img {
+  display: block;
+  width: 100%;
+}

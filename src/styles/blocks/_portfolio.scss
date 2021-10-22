@@ -1,3 +1,52 @@
+.portfolio {
+  padding: 130px 0;
+  text-align: center;
+}
+
 .portfolio-inner {
   @include container;
+}
+
+.portfolio-title {
+  @include h2;
+  padding-bottom: 100px;
+}
+
+.portfolio-images-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 120px;
+}
+
+.portfolio-img {
+  height: 304px;
+}
+
+.portfolio-pic {
+  display: inline-block;
+  padding-right: 20px;
+  width: 25%;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.portfolio-figure {
+  position: relative;
+  margin: 0;
+}
+
+.portfolio-pic-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.4);
 }
