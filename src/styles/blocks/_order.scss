@@ -18,24 +18,24 @@
 
 .order-title {
   @include h2;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   @media (max-width: $df-mobile) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
 }
 
 .order-text {
-  margin: 0;
-  padding-bottom: 90px;
+  margin-top: 0;
+  margin-bottom: 90px;
   font-size: 28px;
   line-height: 38px;
   font-weight: 400;
   text-align: center;
 
   @media (max-width: $df-mobile) {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     font-size: 18px;
     line-height: 25px;
   }

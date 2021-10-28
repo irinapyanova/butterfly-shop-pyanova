@@ -18,3 +18,24 @@
   align-items: center;
 }
 
+.burger {
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid $color-light;
+    border-bottom: 3px solid $color-light;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      border-top: 3px solid $color-light;
+    }
+  }
+}

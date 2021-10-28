@@ -9,27 +9,28 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="header-inner">
       <div class="header-wrap">
-        <a href="#" class="logo">Butterfly</a>
-        <nav class="main-nav">
+        <a href="index.html" class="logo">Butterfly</a>
+        <nav class="main-nav js-main-nav">
           <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </nav>
+        <span class="burger js-burger"></span>
       </div>
     </div>
-  </header> -->
+  </header>
   <main>
     <section class="lead">
       <div class="lead-bg-fade">
         <div class="lead-inner">
           <h1 class="lead-title">Индивидуальный пошив галсутков-бабочек</h1>
-          <a href="#" class="btn">Заказать бабочку</a>
+          <a href="#order" class="btn">Заказать бабочку</a>
         </div>
       </div>
     </section>
@@ -81,7 +82,7 @@
             <input id="phone" name="phone" type="text" class="form-order-input">
           </div>
           <div class="form-order-field-btn">
-            <button class="btn btn-form" type="submit">Заказать</button>
+            <button class="btn btn-form" id="order" type="submit">Заказать</button>
           </div>
         </form>
       </div>
@@ -113,7 +114,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="scripts/jquery-3.6.0.min.js" ></script>
   <script src="scripts/script.js"></script>
 </body>
 

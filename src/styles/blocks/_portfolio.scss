@@ -17,14 +17,14 @@
 
 .portfolio-title {
   @include h2;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 
   @media (max-width: $df-tablet) {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   @media (max-width: $df-mobile) {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 

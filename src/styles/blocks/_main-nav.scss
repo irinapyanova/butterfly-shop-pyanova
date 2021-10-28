@@ -1,11 +1,37 @@
-.main-nav ul {
+.main-nav {
+
+  @media (max-width: $df-mobile) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: $color-dark;
+  }
+
+  ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.main-nav a {
+  @media (max-width: $df-mobile) {
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+  }
+}
+  li {
+
+    @media (max-width: $df-mobile) {
+      margin-top: 10px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  a {
   margin-left: 10px;
   padding: 33px 25px;
   font-size: 14px;
@@ -17,4 +43,15 @@
     background-color: $color-accent;
   }
 
+  @media (max-width: $df-mobile) {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 25px;
+  }
+}
+}
+
+// states
+.main-nav-open {
+  display: block;
 }
