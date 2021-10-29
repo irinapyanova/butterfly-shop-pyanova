@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('.js-burger').on('click', function(){
-    $('.js-main-nav').toggleClass('main-nav-open');
+    $('.js-burger').prev().slideToggle();
   })
 
 
