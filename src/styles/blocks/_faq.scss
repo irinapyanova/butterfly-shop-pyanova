@@ -1,5 +1,13 @@
 .faq {
-  padding: 210px 0;
+  padding: 220px 0;
+
+  @media (max-width: $df-tablet) {
+    padding: 210px 0;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 160px 0;
+  }
 }
 
 .faq-inner {
@@ -8,7 +16,15 @@
 
 .faq-title {
   @include h2;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 50px;
+  }
 }
 
 .faq-item {
@@ -17,6 +33,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 20px;
   }
 }
 
@@ -31,16 +51,54 @@
   border: none;
   background-color: $color-light;
   cursor: pointer;
+
+  @media (max-width: $df-tablet) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 
 .faq-answer {
   display: none;
+  margin: 0;
   padding: 0 30px 30px 30px;
   color: $color-dark;
+
+  @media (max-width: $df-tablet) {
+    padding: 0 30px 25px 30px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 0 15px 15px 15px;
+  }
 }
 
 .faq-text {
+  margin: 0;
+  padding-bottom: 40px;
   font-size: 18px;
   line-height: 25px;
   font-weight: 300;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $df-tablet) {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
