@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butterfly shop</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="logo">Butterfly</a>
+        <nav class="main-nav js-main-nav">
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a class="active" href="contacts.html">Контакты</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="burger js-burger"></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="contacts">
+      <div class="contacts-inner">
+        <h1 class="contacts-title">Контакты</h1>
+        <ul class="tabs">
+          <li class="tabs-item">
+            <a href="#" class="tabs-link active">Санкт-Петербург</a>
+          </li>
+          <li class="tabs-item">
+            <a href="#" class="tabs-link">Москва</a>
+          </li>
+          <li class="tabs-item">
+            <a href="#" class="tabs-link">Екатеринбург</a>
+          </li>
+        </ul>
+        <div class="contacts-content active">
+          <div class="contacts-info">
+            <p class="contacts-text">Спасский переулок, д. 14</p>
+            <p class="contacts-text">Тел: +7 812 800-8080</p>
+            <p class="contacts-text">Пн-Пт с 9-00 до 20-00</p>
+          </div>
+          <div class="contacts-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.3848412293847!2d30.318944924431005!3d59.92775594634244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310164e91a71%3A0x100656bc09a80843!2sSpasskiy%20Pereulok%2C%2014%2C%20Sankt-Peterburg%2C%20190031!5e0!3m2!1sen!2sru!4v1635700367237!5m2!1sen!2sru"
+              width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="contacts-content">
+          <div class="contacts-info">
+            <p class="contacts-text">Первая ул., д. 1</p>
+            <p class="contacts-text">Тел: +7 812 800-8080</p>
+            <p class="contacts-text">Пн-Пт с 9-00 до 20-00</p>
+          </div>
+          <div class="contacts-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.3848412293847!2d30.318944924431005!3d59.92775594634244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310164e91a71%3A0x100656bc09a80843!2sSpasskiy%20Pereulok%2C%2014%2C%20Sankt-Peterburg%2C%20190031!5e0!3m2!1sen!2sru!4v1635700367237!5m2!1sen!2sru"
+              width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="contacts-content">
+          <div class="contacts-info">
+            <p class="contacts-text">Вторая ул., д. 2</p>
+            <p class="contacts-text">Тел: +7 812 800-8080</p>
+            <p class="contacts-text">Пн-Пт с 9-00 до 20-00</p>
+          </div>
+          <div class="contacts-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.3848412293847!2d30.318944924431005!3d59.92775594634244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310164e91a71%3A0x100656bc09a80843!2sSpasskiy%20Pereulok%2C%2014%2C%20Sankt-Peterburg%2C%20190031!5e0!3m2!1sen!2sru!4v1635700367237!5m2!1sen!2sru"
+              width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="order-inner">
+        <h2 class="order-title">Закажи пошив</h2>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече он снимет мерки и поможет определиться с тканью.</p>
+        <form action="#" method="POST" class="order-form">
+          <div class="form-order-field">
+            <label for="name" class="form-order-label">Ваше имя</label>
+            <input id="name" name="name" type="text" class="form-order-input">
+          </div>
+          <div class="form-order-field">
+            <label for="phone" class="form-order-label">Телефон</label>
+            <input id="phone" name="phone" type="text" class="form-order-input">
+          </div>
+          <div class="form-order-field form-order-field-btn">
+            <button class="btn btn-form" type="submit">Заказать</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <a href="index.html" class="logo logo-footer">Butterfly</a>
+        <a href="tel:+78128008080" class="footer-phone">+7 812 800-80-80</a>
+        <ul class="social-icons">
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-instagram.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-facebook.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-telegram.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Телеграмм</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

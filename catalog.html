@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butterfly shop</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="logo">Butterfly</a>
+        <nav class="main-nav js-main-nav">
+          <ul>
+            <li><a class="active" href="catalog.html">Каталог</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="burger js-burger"></button>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <section class="portfolio catalog">
+      <div class="portfolio-inner">
+        <h1 class="portfolio-title">Наши работы</h1>
+        <ul class="filter">
+          <li class="filter-item">
+            <a href="#" class="filter-link active" data-type="all">Все</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="strict">Строгие</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="fun">Веселые</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="animals">Для животных</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="child">Детские</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-type="adult">Для взрослых</a>
+          </li>
+        </ul>
+
+        <div class="portfolio-list">
+          <div class="portfolio-images-wrap">
+            <div class="portfolio-pic" data-type="strict">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка такая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="strict">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-1.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка растакая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="strict">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-2.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка сякая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="animals">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-3.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка кривая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic">
+              <figure class="portfolio-figure" data-type="strict">
+                <img src="../images/portfolio-pic-4.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка растакая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic">
+              <figure class="portfolio-figure" data-type="strict">
+                <img src="../images/portfolio-pic-5.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка такая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="child">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-6.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка кривая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="strict">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-7.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка сякая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="adult">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-8.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка растакая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="adult">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-9.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка такая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="fun">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-10.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка сякая</figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-pic" data-type="fun">
+              <figure class="portfolio-figure">
+                <img src="../images/portfolio-pic-11.jpg" alt="Фотография синей бабочки" class="portfolio-img">
+                <figcaption class="portfolio-pic-desc">Бабочка кривая</figcaption>
+              </figure>
+            </div>
+          </div>
+          <a href="catalog.html" class="btn">Больше бабочек</a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="order-inner">
+        <h2 class="order-title">Закажи пошив</h2>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече он снимет мерки и поможет определиться с тканью.</p>
+        <form action="#" method="POST" class="order-form">
+          <div class="form-order-field">
+            <label for="name" class="form-order-label">Ваше имя</label>
+            <input id="name" name="name" type="text" class="form-order-input">
+          </div>
+          <div class="form-order-field">
+            <label for="phone" class="form-order-label">Телефон</label>
+            <input id="phone" name="phone" type="text" class="form-order-input">
+          </div>
+          <div class="form-order-field form-order-field-btn">
+            <button class="btn btn-form" type="submit">Заказать</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <a href="index.html" class="logo logo-footer">Butterfly</a>
+        <a href="tel:+78128008080" class="footer-phone">+7 812 800-80-80</a>
+        <ul class="social-icons">
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-instagram.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-facebook.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-telegram.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Телеграмм</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
