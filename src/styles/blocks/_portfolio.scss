@@ -1,13 +1,13 @@
 .portfolio {
-  padding: 130px 0;
+  padding: 120px 0;
   text-align: center;
 
   @media (max-width: $df-tablet) {
-    padding: 120px 0;
+    padding: 110px 0;
   }
 
   @media (max-width: $df-mobile) {
-    padding: 90px 0;
+    padding: 80px 0;
   }
 }
 
@@ -30,7 +30,7 @@
 
 .portfolio-images-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-right: -($indent-gap / 2);
   margin-left: -($indent-gap / 2);
   padding-bottom: 120px;
@@ -46,26 +46,21 @@
   }
 }
 
-.portfolio-img {
-  height: 304px;
-
-  @media (max-width: $df-tablet) {
-    height: 100%;
-  }
-}
-
 .portfolio-pic {
   display: inline-block;
-  padding: 0 ($indent-gap / 2);
+  padding: ($indent-gap / 2);
   flex-basis: 25%;
 
   @media (max-width: $df-tablet) {
     flex-basis: 50%;
-    padding-bottom: $indent-gap;
   }
 
   @media (max-width: $df-mobile) {
-    width: 100%;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
     &:last-child {
       padding-bottom: 0;
     }
@@ -75,17 +70,6 @@
 .portfolio-figure {
   position: relative;
   margin: 0;
-
-  @media (max-width: $df-tablet) {
-    margin: 0 auto;
-    width: 344px;
-    height: 344px;
-  }
-
-  @media (max-width: $df-mobile) {
-    width: 300px;
-    height: 300px;
-  }
 }
 
 .portfolio-pic-desc {

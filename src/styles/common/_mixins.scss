@@ -17,6 +17,12 @@
     line-height: 49px;
   }
 
+  @media (max-width: $df-mobile) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
 }
 
 @mixin h2 {

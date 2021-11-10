@@ -1,5 +1,9 @@
 .main-nav {
 
+  @media (min-width: $tablet-bp) {
+    display: block !important;
+  }
+
   @media (max-width: $df-mobile) {
     position: absolute;
     top: 100%;
@@ -10,17 +14,18 @@
   }
 
   ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-  @media (max-width: $df-mobile) {
-    display: block;
-    padding: 25px 0;
-    text-align: center;
+    @media (max-width: $df-mobile) {
+      display: block;
+      padding: 25px 0;
+      text-align: center;
+    }
   }
-}
+
   li {
 
     @media (max-width: $df-mobile) {
@@ -31,23 +36,30 @@
       }
     }
   }
-  a {
-  margin-left: 10px;
-  padding: 33px 25px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
 
-  &:hover {
+  a {
+    display: block;
+    margin-left: 10px;
+    padding: 33px 25px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $color-accent;
+    }
+
+    @media (max-width: $df-mobile) {
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+      padding: 8px 25px;
+    }
+  }
+
+  a.active {
     background-color: $color-accent;
   }
-
-  @media (max-width: $df-mobile) {
-    display: inline-block;
-    margin: 0;
-    padding: 8px 25px;
-  }
-}
 }
 

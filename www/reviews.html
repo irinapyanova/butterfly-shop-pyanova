@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butterfly shop</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="logo">Butterfly</a>
+        <nav class="main-nav js-main-nav">
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a class="active" href="reviews.html">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="burger js-burger"></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="reviews">
+      <div class="reviews-inner">
+        <h1 class="reviews-title">Отзывы</h1>
+
+        <div class="reviews-wrap js-reviews-wrap">
+
+          <div class="reviews-btn-wrap">
+            <button class="reviews-btn js-btn-prev" style="background-image: url('../images/icon-prev.svg');"></button>
+          </div>
+
+          <div class="reviews-content js-reviews-content">
+
+            <div class="reviews-container">
+              <div class="reviews-slider">
+                <div class="reviews-img-wrap"><img src="../images/reviews-pic.jpg" alt="Фото Лидии Ивановны"
+                    class="reviews-img"></div>
+                <div class="reviews-info">
+                  <h2 class="reviews-name">Лидия Ивановна</h2>
+                  <p class="reviews-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос! <br>
+                    А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-container">
+              <div class="reviews-slider">
+                <div class="reviews-img-wrap"><img src="../images/reviews-pic-1.jpg" alt="Фото Семена Ивановича"
+                    class="reviews-img"></div>
+                <div class="reviews-info">
+                  <h2 class="reviews-name">Cемен Иваныч</h2>
+                  <p class="reviews-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос!
+                    А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-container">
+              <div class="reviews-slider">
+                <div class="reviews-img-wrap"><img src="../images/reviews-pic-2.jpg" alt="Фото Сан Саныча"
+                    class="reviews-img"></div>
+                <div class="reviews-info">
+                  <h2 class="reviews-name">Сан Саныч</h2>
+                  <p class="reviews-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос!
+                    А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="reviews-btn-wrap">
+            <button class="reviews-btn js-btn-next" style="background-image: url('../images/icon-next.svg');"></button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="order-inner">
+        <h2 class="order-title">Закажи пошив</h2>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече он снимет мерки и поможет определиться с тканью.</p>
+        <form action="#" method="POST" class="order-form">
+          <div class="form-order-field">
+            <label for="name" class="form-order-label">Ваше имя</label>
+            <input id="name" name="name" type="text" class="form-order-input">
+          </div>
+          <div class="form-order-field">
+            <label for="phone" class="form-order-label">Телефон</label>
+            <input id="phone" name="phone" type="text" class="form-order-input">
+          </div>
+          <div class="form-order-field form-order-field-btn">
+            <button class="btn btn-form" type="submit">Заказать</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <a href="index.html" class="logo logo-footer">Butterfly</a>
+        <a href="tel:+78128008080" class="footer-phone">+7 812 800-80-80</a>
+        <ul class="social-icons">
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-instagram.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-facebook.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" style="background-image: url('/images/icon-telegram.svg');">
+              <span class="social-text">Перейти в аккаунт магазина в Телеграмм</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

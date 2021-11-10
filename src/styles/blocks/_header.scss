@@ -4,8 +4,11 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  padding: 17px 0;
   background-color: $color-dark;
+
+  @media (max-width: $df-mobile) {
+    padding: 16px 0;
+  }
 }
 
 .header-inner {
@@ -20,6 +23,8 @@
 
 .burger {
   display: none;
+  border: none;
+  background-color: $color-dark;
 
   @media (max-width: $df-mobile) {
     position: relative;

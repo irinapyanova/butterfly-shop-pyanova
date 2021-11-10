@@ -43,8 +43,9 @@
 
 .order-form {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  margin-right: -($indent-gap / 2);
+  margin-left: -($indent-gap / 2);
 
   @media (max-width: $df-tablet) {
     flex-wrap: wrap;
@@ -56,24 +57,15 @@
 }
 
 .form-order-field {
-  flex-basis: 100%;
-  padding-right: $indent-gap;
-
-  &:last-child {
-    padding-right: 0;
-  }
+  flex-basis: 33.33%;
+  padding: 0 ($indent-gap / 2);
 
   @media (max-width: $df-tablet) {
     flex-basis: 50%;
     padding-bottom: 40px;
-
-    &:nth-child(2n) {
-      padding-right: 0;
-    }
   }
 
   @media (max-width: $df-mobile) {
-    padding-right: 0;
     padding-bottom: 30px;
   }
 }
@@ -98,14 +90,14 @@
   border-radius: 6px;
   background-color: $color-light;
 }
+
 .form-order-field-btn {
-  flex-basis: 100%;
 
   @media (max-width: $df-tablet) {
     flex-basis: 100%;
   }
-
 }
+
 .btn-form {
   width: 100%;
   padding: 35px 0;

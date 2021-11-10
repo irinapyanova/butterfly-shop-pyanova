@@ -18,20 +18,20 @@
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="reviews.html">Отзывы</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a class="active" href="faq.html">FAQ</a></li>
           </ul>
         </nav>
-        <span class="burger js-burger"></span>
+        <button class="burger js-burger"></button>
       </div>
     </div>
   </header>
   <main>
     <section class="faq">
       <div class="faq-inner">
-        <h2 class="faq-title">Как мы работаем</h2>
+        <h1 class="faq-title">Как мы работаем</h1>
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-question js-accordion-btn">Как можно оплатить заказ?</button>
+            <button class="faq-question js-accordion-btn">Как можно оплатить заказ?<span class="js-faq-icon"></span></button>
             <div class="faq-answer">
               <p class="faq-text">Принимая во внимание показатели успешности, реализация намеченных плановых заданий
                 является качественно новой ступенью распределения внутренних резервов и ресурсов. В частности,
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question js-accordion-btn">Как получить готовый заказ?</button>
+            <button class="faq-question js-accordion-btn">Как получить готовый заказ? <span class="js-faq-icon"></span></button>
             <div class="faq-answer">
               <p class="faq-text">Принимая во внимание показатели успешности, реализация намеченных плановых заданий
                 является качественно новой ступенью распределения внутренних резервов и ресурсов. В частности,
@@ -63,7 +63,7 @@
         </div>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
       <div class="order-inner">
         <h2 class="order-title">Закажи пошив</h2>
         <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
@@ -77,8 +77,8 @@
             <label for="phone" class="form-order-label">Телефон</label>
             <input id="phone" name="phone" type="text" class="form-order-input">
           </div>
-          <div class="form-order-field-btn">
-            <button class="btn btn-form" id="order" type="submit">Заказать</button>
+          <div class="form-order-field form-order-field-btn">
+            <button class="btn btn-form" type="submit">Заказать</button>
           </div>
         </form>
       </div>
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link" style="background-image: url('/images/icon-telegram.svg');">
+            <a href="#" class="social-link">
               <span class="social-text">Перейти в аккаунт магазина в Телеграмм</span>
             </a>
           </li>
