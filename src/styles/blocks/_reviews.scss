@@ -35,6 +35,7 @@
   align-items: center;
 
   @media (max-width: $df-mobile) {
+    position: relative;
     justify-content: center;
   }
 }
@@ -44,9 +45,8 @@
   text-align: center;
 
   @media (max-width: $df-mobile) {
-    // position: absolute;
-    // left: 5px;
-    // bottom: 250px;
+    position: absolute;
+    top: 65%;
   }
 }
 
@@ -61,12 +61,17 @@
   @media (max-width: $df-tablet) {
     height: 44px;
     width: 44px;
+    border-radius: 50%;
   }
 }
 
 .reviews-content {
   flex-shrink: 0;
   width: 83.33%;
+
+  @media (max-width: $df-tablet) {
+    width: 100%;
+  }
 }
 
 .reviews-slider {
@@ -92,6 +97,7 @@
 
   @media (max-width: $df-mobile) {
     margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -101,8 +107,9 @@
   border-radius: 50%;
 
   @media (max-width: $df-tablet) {
-    height: 236px;
-    width: 236px;
+    height: 260px;
+    width: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -111,6 +118,7 @@
 
   @media (max-width: $df-mobile) {
     text-align: center;
+    padding: 0 40px;
   }
 }
 

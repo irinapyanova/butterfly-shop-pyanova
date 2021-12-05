@@ -1,8 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   // Меню на мобильной версии
 
-  $('.js-burger').on('click', function(){
+  $('.js-burger').on('click', function () {
     $('.js-burger').prev().slideToggle();
   })
 
@@ -10,7 +10,7 @@ $(document).ready(function(){
   // Аккордион страница вопросов и ответов
 
   let prevBtn;
-  $('.js-accordion-btn').on('click', function() {
+  $('.js-accordion-btn').on('click', function () {
 
     if (prevBtn === $(this)[0]) {
       $(this).next().slideToggle();
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
   // Табы на странице контактов
 
-  $('.tabs-link').on('click', function(event) {
+  $('.tabs-link').on('click', function (event) {
     event.preventDefault();
 
     let index = $(this).index('.tabs-link');
@@ -43,8 +43,8 @@ $(document).ready(function(){
 
   // Слайдер на странице отзывов
 
-  if ( $('.js-reviews-wrap').length) {
-    $('.js-reviews-wrap').each(function() {
+  if ($('.js-reviews-wrap').length) {
+    $('.js-reviews-wrap').each(function () {
       $(this).find('.js-reviews-content').slick({
         prevArrow: $(this).find('.js-btn-prev'),
         nextArrow: $(this).find('.js-btn-next')
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 
   // Фильтр на странице каталог
-  $('.filter-link').on('click', function(event) {
+  $('.filter-link').on('click', function (event) {
     event.preventDefault();
 
     let linkType = $(this).data('type');
@@ -67,7 +67,7 @@ $(document).ready(function(){
       return;
     }
 
-    $('.portfolio-pic').each(function(){
+    $('.portfolio-pic').each(function () {
       let itemType = $(this).data('type');
 
       if (linkType === itemType) {
@@ -82,19 +82,19 @@ $(document).ready(function(){
 
   // Подгрузка элементов на странице catalog
 
-  $('.js-btn-catalog').on('click', function(event) {
+  $('.js-btn-catalog').on('click', function (event) {
     event.preventDefault();
 
     $.ajax({
       type: 'POST',
-      url: '/json/catalog.json',
+      url: '../json/catalog.json',
       data: 'count=4',
-      success: function(response){
+      success: function (response) {
         let html = createHtml(response);
         addToHtml(html);
         button.text('Больше бабочек');
       },
-      error: function(){}
+      error: function () { }
     });
 
     function addToHtml(string) {
@@ -105,7 +105,7 @@ $(document).ready(function(){
       let dataArray = data.catalog;
       let htmlString = '';
 
-      dataArray.forEach(function(item){
+      dataArray.forEach(function (item) {
         htmlString = htmlString + `<div class="portfolio-pic" data-type="${item.dataType}">
           <figure class="portfolio-figure">
               <img src="${item.imageUrl}" alt="${item.imageAlt}" class="portfolio-img">

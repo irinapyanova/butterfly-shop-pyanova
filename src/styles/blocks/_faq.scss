@@ -76,7 +76,7 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-image: url('/images/icon-plus.svg');
+  background-image: url('../images/icon-plus.svg');
 
   @media (max-width: $df-mobile) {
     height: 30px;
@@ -86,7 +86,7 @@
 }
 
 .faq-icon-minus {
-  background-image: url('/images/icon-minus.svg');
+  background-image: url('../images/icon-minus.svg');
   background-repeat: no-repeat;
   background-position: center;
 }

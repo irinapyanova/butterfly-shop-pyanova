@@ -22,11 +22,11 @@
   margin-bottom: 40px;
 
   @media (max-width: $df-tablet) {
-    flex-wrap: wrap;
+    overflow: auto;
   }
 
   @media (max-width: $df-mobile) {
-    display: block;
+    justify-content: space-between;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 
   @media (max-width: $df-mobile) {
-    margin-right: 0;
+    margin-right: 20px;
     margin-bottom: 10px;
 
     &:last-child {
@@ -65,5 +65,6 @@
 
   @media (max-width: $df-tablet) {
     font-size: 18px;
+    white-space: nowrap;
   }
 }
