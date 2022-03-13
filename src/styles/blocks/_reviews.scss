@@ -70,6 +70,10 @@
   width: 83.33%;
 
   @media (max-width: $df-tablet) {
+    width: 80%;
+  }
+
+  @media (max-width: $df-mobile) {
     width: 100%;
   }
 }
@@ -159,4 +163,3 @@
     line-height: 22px;
   }
 }
-
