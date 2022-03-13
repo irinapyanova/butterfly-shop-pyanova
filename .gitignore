@@ -1,6 +1,5 @@
 node_modules
 deploy.json
-dist
 app/bower_components
 _design
 /bower_components
